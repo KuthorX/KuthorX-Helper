@@ -1,0 +1,24 @@
+<!--miniprogram/pages/circle/poster-detail/poster-detail.wxml-->
+<view>
+
+  <view wx:if="{{posterData}}">
+    <post-item is="post-item" data="{{posterData}}" class="post-item-wrapper" bind:deleteEvent="onItemDelete" dontGoDetail="true" originId="{{originId}}" bind:likeEvent="onItemLike" />
+  </view>
+
+  <view class="inter-border">
+    <view>互动详情</view>
+    <view>
+      <view>
+        <button class="inter-btn" style="background: {{currentPage === 'like' ? '#111' : 'rgba(0,0,0,0)'}}; color: {{currentPage === 'like' ? '#fff' : '#000'}}" bindtap="onLikeBtnTap">点赞</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="inter-detail">
+    <block wx:for="{{likeList}}" wx:for-index="idx" wx:for-item="itemName" wx:key="_id">
+      <view data-id="{{itemName.likeId}}" class="name-item" hover-class="name-hover" bindtap="onLikeItemTap">{{itemName.name}}</view>
+    </block>
+    <view wx:if="{{likeList.length === 0}}" class="empty-placeholder" >无数据</view>
+  </view>
+
+</view>

@@ -1,0 +1,49 @@
+<!-- miniprogram/pages/circle.wxml -->
+<view class="circle-container">
+
+  <abstract-load is="abstract-load" pageMainLoaded="{{pageMainLoaded}}" pageMeLoaded="{{pageMeLoaded}}" bind:allLoadEvent="onAllLoad" />
+
+  <view class="main-header" style="display:{{currentPage === 'main' ? 'flex' : 'none'}};max-height:{{mainHeaderMaxHeight}}">
+    <view class="group-picker-wrapper">
+      <picker bindchange="bindGroupPickerChange" value="{{groupArrayIndex}}" range="{{groupArray}}" class="group-picker">
+        <button class="group-picker-inner">
+          {{groupArray[groupArrayIndex]}}
+        </button>
+      </picker>
+    </view>
+    <view class="search-btn-wrapper">
+      <button class="search-btn" bindtap="onSearchTap">搜索用户</button>
+    </view>
+  </view>
+  <view class="main-area" style="display:{{currentPage === 'main' ? 'block' : 'none'}};height: {{mainAreaHeight}};margin-top:{{mainAreaMarginTop}}">
+
+    <scroll-view scroll-y class="main-area-scroll" bindscroll="onMainPageScroll">
+      <block wx:for="{{pageMainData}}" wx:for-index="idx" wx:for-item="itemName" wx:key="_id">
+        <post-item is="post-item" data="{{itemName}}" originId="{{userId}}" class="post-item-wrapper" bind:deleteEvent="onItemDelete" />
+      </block>
+      <view wx:if="{{pageMainData.length === 0}}" class="item-placeholder">无数据</view>
+    </scroll-view>
+    <button class="add-poster-btn" bindtap="onAddPosterTap" hover-class="add-poster-btn-hover" style="bottom:{{addPosterBtnBottom}}">+</button>
+
+  </view>
+
+  <view style="display:{{currentPage === 'msg' ? 'flex' : 'none'}}" class="msg-area">
+
+  </view>
+
+  <view style="display:{{currentPage === 'me' ? 'flex' : 'none'}}" class="me-area">
+    <user-info userName="{{userName}}" posterCount="{{posterCount}}" followingCount="{{followingCount}}" followerCount="{{followerCount}}" userId="{{userId}}" class="user-info-wrapper" />
+  </view>
+
+  <view class="footer">
+    <view class="footer-item">
+      <button class="footer-btn" bindtap="onPageMainTap" style="background: {{currentPage === 'main' ? '#111' : 'rgba(0,0,0,0)'}}; color: {{currentPage === 'main' ? '#fff' : '#000'}}">首页</button>
+    </view>
+    <view class="footer-item">
+      <button class="footer-btn" bindtap="onPageMsgTap" style="background: {{currentPage === 'msg' ? '#111' : 'rgba(0,0,0,0)'}}; color: {{currentPage === 'msg' ? '#fff' : '#000'}}">消息</button>
+    </view>
+    <view class="footer-item">
+      <button class="footer-btn" bindtap="onPageMeTap" style="background: {{currentPage === 'me' ? '#111' : 'rgba(0,0,0,0)'}}; color: {{currentPage === 'me' ? '#fff' : '#000'}}">个人</button>
+    </view>
+  </view>
+</view>

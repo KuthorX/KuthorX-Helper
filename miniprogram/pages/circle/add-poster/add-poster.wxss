@@ -1,0 +1,62 @@
+/* miniprogram/pages/circle/add-poster/add-poster.wxss */
+
+.app-poster-container {
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  position: relative;
+  flex-grow: 1;
+  height: calc(100vh - 120rpx);
+  overflow: auto;
+  z-index: 1;
+}
+
+.text-area-wrapper {
+  padding: 30rpx 20rpx;
+  height: 230rpx;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.text-area-footer {
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: end;
+  padding-right: 20rpx;
+}
+
+.image-area {
+  padding: 30rpx 20rpx;
+}
+
+.image-outer {
+  width: 33%;
+}
+
+.footer {
+  border-top: 3rpx solid #aaa;
+  display: flex;
+  position: fixed;
+  height: 120rpx;
+  bottom: 0;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.footer-btn {
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}

@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/circle/circle",
+    "pages/index/index",
+    "pages/circle/search-user/search-user",
+    "pages/circle/user-poster/user-poster",
+    "pages/circle/add-poster/add-poster",
+    "pages/circle/user-data/user-data",
+    "pages/circle/user-follower/user-follower",
+    "pages/circle/user-following/user-following",
+    "pages/circle/poster-detail/poster-detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 30000
+  }
+}

@@ -1,0 +1,20 @@
+/* pages/circle/component/user-info/user-info.wxss */
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  border-bottom: 1rpx solid #aaa;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  height: auto;
+}
+
+.info-item-hover {
+  background: #ddd;
+}

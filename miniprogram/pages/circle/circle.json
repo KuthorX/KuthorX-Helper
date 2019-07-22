@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "post-item": "./component/post-item/post-item",
+    "abstract-load": "./component/abstract-load/abstract-load",
+    "user-info": "./component/user-info/user-info"
+  },
+  "disableScroll": true
+}

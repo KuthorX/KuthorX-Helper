@@ -1,0 +1,7 @@
+<!--miniprogram/pages/circle/user-poster/user-poster.wxml-->
+<scroll-view scroll-y class="main-area-scroll" bindscroll="onMainPageScroll">
+  <block wx:for="{{userPostData}}" wx:for-index="idx" wx:for-item="itemName" wx:key="_id">
+    <post-item is="post-item" data="{{itemName}}" originId="{{userId}}" class="post-item-wrapper" />
+  </block>
+  <view wx:if="{{userPostData.length === 0}}" class="item-placeholder">无数据</view>
+</scroll-view>

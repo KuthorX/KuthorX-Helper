@@ -1,0 +1,9 @@
+<!--miniprogram/pages/circle/user-follower/user-follower.wxml-->
+<view>
+ <view class="result-area">
+    <block wx:for="{{followerData}}" wx:for-index="idx" wx:for-item="itemName">
+      <view data-id="{{itemName.userId}}" bindtap="onItemTap" class="item" hover-class="item-hover">{{itemName.name}}</view>
+    </block>
+    <view wx:if="{{followerData.length === 0}}" class="item-placeholder" >无数据</view>
+  </view>
+</view>

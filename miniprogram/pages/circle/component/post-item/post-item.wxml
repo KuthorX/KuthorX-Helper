@@ -1,0 +1,18 @@
+<!--pages/circle/post-item/post-item.wxml-->
+<view class="post-item" hover-class="post-item-hover" bindlongpress="onItemLongTap" bindtap="onItemTap">
+  <view class="post-title">
+    <view class="author" hover-class="author-hover" catchtap="onAuthorTap">{{data.author}}</view>
+    <view class="date">{{data.formatDate}}</view>
+  </view>
+  <view class="msg-wrapper">
+    <text class="msg">{{data.msg}}</text>
+  </view>
+  <view class="image-outer" wx:if="{{data.photoId !== ''}}" catchtap="onImgTap">
+    <image-wrapper is="image-wrapper" src="{{data.photoId}}" />
+  </view>
+  <view class="interact-area">
+    <view class="interact-item">
+      <button class="interact-btn" catchtap="onLikeTap" style="color:{{liked ? '#55aaff' : '#000'}}">赞 {{likeCount}}</button>
+    </view>
+  </view>
+</view>

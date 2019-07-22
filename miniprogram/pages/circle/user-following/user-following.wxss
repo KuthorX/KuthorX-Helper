@@ -1,0 +1,28 @@
+/* miniprogram/pages/circle/user-following/user-following.wxss */
+.result-area {
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100vh - 80rpx);
+}
+
+.item-placeholder {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: center;
+}
+
+.item {
+  width: 100%;
+  padding: 20rpx 20rpx;
+  border-bottom: 3rpx solid #aaa;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item-hover {
+  background: #ddd;
+}

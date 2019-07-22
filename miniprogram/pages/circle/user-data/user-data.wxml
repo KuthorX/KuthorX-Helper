@@ -1,0 +1,2 @@
+<!--miniprogram/pages/circle/user-data.wxml-->
+<user-info userName="{{userName}}" posterCount="{{posterCount}}" followingCount="{{followingCount}}" followerCount="{{followerCount}}" userId="{{userId}}" originId="{{originId}}"/>

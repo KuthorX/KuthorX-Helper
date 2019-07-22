@@ -1,0 +1,7 @@
+<!--pages/circle/component/image-wrapper/image-wrapper.wxml-->
+<view class="image-wrapper">
+  <image src="{{src}}" mode="aspectFill" lazy-load="true" class="image-inner" bindload="onImageLoad"></image>
+  <view class="placeholder" style="visibility:{{isShowPlaceholdler ? 'visible': 'hidden'}}">
+    {{placeText}}
+  </view>
+</view>

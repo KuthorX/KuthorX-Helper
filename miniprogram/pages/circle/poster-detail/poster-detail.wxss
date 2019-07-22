@@ -1,0 +1,50 @@
+/* miniprogram/pages/circle/poster-detail/poster-detail.wxss */
+@import "./../component/post-item/post-item.wxss";
+
+.inter-border {
+  border-top: 3rpx solid #aaa;
+  border-bottom: 3rpx solid #aaa;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.inter-detail {
+}
+
+.inter-btn {
+  border-radius: 0;
+  height: 60rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-hover {
+  background: #ddd;
+}
+
+.name-item {
+  padding: 20rpx 20rpx;
+  height: 50rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 3rpx solid #aaa;
+}
+
+.name-item:last-child {
+  border-bottom: none;
+}
+
+.empty-placeholder {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: center;
+}

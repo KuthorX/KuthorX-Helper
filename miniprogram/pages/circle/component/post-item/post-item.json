@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "image-wrapper": "/component/image-wrapper/image-wrapper"
+  },
+  "disableScroll": true
+}

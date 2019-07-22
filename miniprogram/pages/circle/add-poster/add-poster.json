@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "image-wrapper": "/component/image-wrapper/image-wrapper"
+  }
+}

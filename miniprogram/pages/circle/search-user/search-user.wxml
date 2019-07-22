@@ -1,0 +1,20 @@
+<!--miniprogram/pages/circle/search-user/search-user.wxml-->
+<view class="container">
+
+  <view class="search-bar-wrapper">
+    <view class="search-bar">
+      <input class="search-bar-inner" value="{{text}}" maxlength="20" bindinput="bindTextInput" auto-focus="true"></input>
+    </view>
+    <view class="search-btn-wrapper">
+      <button class="search-btn" bindtap="onSearchTap">查找</button>
+    </view>
+  </view>
+
+  <view class="search-result-area">
+    <block wx:for="{{searchData}}" wx:for-index="idx" wx:for-item="itemName">
+      <view data-id="{{itemName.userId}}" bindtap="onSearchItemTap" class="search-item" hover-class="search-item-hover">{{itemName.name}}</view>
+    </block>
+    <view wx:if="{{searchData.length === 0}}" class="search-item-placeholder" >无数据</view>
+  </view>
+
+</view>

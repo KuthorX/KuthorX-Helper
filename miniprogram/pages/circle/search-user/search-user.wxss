@@ -1,0 +1,60 @@
+/* miniprogram/pages/circle/search-user/search-user.wxss */
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80rpx;
+  border-bottom: 3rpx solid #aaa;
+}
+
+.search-bar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-btn-wrapper {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn {
+  font-size: 30rpx;
+}
+
+.search-bar-inner {
+  width: 100%;
+  padding-left: 20rpx;
+}
+
+.search-result-area {
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100vh - 80rpx);
+}
+
+.search-item-placeholder {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: center;
+}
+
+.search-item {
+  width: 100%;
+  padding: 20rpx 20rpx;
+  border-bottom: 3rpx solid #aaa;
+}
+
+.search-item:last-child {
+  border-bottom: 0;
+}
+
+.search-item-hover {
+  background: #ddd;
+}

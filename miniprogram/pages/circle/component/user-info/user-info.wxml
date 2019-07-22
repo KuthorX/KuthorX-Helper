@@ -1,0 +1,8 @@
+<!--pages/circle/component/user-info/user-info.wxml-->
+<view class="user-info">
+  <view class="info-item" hover-class="info-item-hover">用户名: {{userName}}</view>
+  <view class="info-item" hover-class="info-item-hover" bindtap="onPosterCountTap">动态数: {{posterCount}}</view>
+  <view class="info-item" hover-class="info-item-hover" bindtap="onFollowingCountTap">关注数: {{followingCount}}</view>
+  <view class="info-item" hover-class="info-item-hover" bindtap="onFollowerCountTap">粉丝数: {{followerCount}}</view>
+  <view class="info-item" hover-class="info-item-hover" wx:if="{{originId && originId !== '' && originId !== userId}}"><button bindtap="onFollowTap">{{followText}}</button></view>
+</view>

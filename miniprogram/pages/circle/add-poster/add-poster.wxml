@@ -1,0 +1,22 @@
+<!--miniprogram/pages/circle/add-poster/add-poster.wxml-->
+<view class="app-poster-container">
+
+  <view class="body">
+    <view class="text-area-wrapper">
+      <textarea bindinput="bindTextInput" placeholder="在此填写" value="{{text}}" auto-focus="true" />
+      <view class="text-area-footer">
+        <text>{{remainLen}}/140</text>
+      </view>
+    </view>
+    <view bindtap="onImageTap" class="image-area">
+      <view class="image-outer">
+        <image-wrapper is="image-wrapper" src="{{imageSrc}}" placeholder="选择图片上传" />
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <button class="footer-btn" bindtap="onSendTap">发送</button>
+  </view>
+
+</view>

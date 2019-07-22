@@ -1,0 +1,72 @@
+/* pages/circle/post-item/post-item.wxss */
+
+.post-item {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  padding: 30rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-item-hover {
+  background: #ddd;
+}
+
+.post-item .post-title {
+  display: flex;
+  align-items: center;
+  padding-right: 40rpx;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post-item .author {
+  width: 50%;
+}
+
+.post-item .author-hover {
+  background: #ddd;
+}
+
+.post-item .date {
+  /* margin-left: 30rpx; */
+  width: 50%;
+  text-align: end;
+  font-size: 25rpx;
+  color: #888;
+}
+
+.msg-wrapper {
+  width: 100%;
+}
+
+.post-item .msg {
+  display: block;
+  margin: 15rpx 0;
+}
+
+.post-item .image-outer {
+  width: 33%;
+}
+
+.interact-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.interact-item {
+  width: 33.33%;
+}
+
+.interact-btn {
+  font-size: 28rpx;
+  height: 50rpx;
+  padding: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

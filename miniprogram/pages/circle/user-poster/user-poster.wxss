@@ -1,0 +1,29 @@
+/* miniprogram/pages/circle/user-poster/user-poster.wxss */
+
+.post-item-wrapper {
+  display: block;
+  border-bottom: 3rpx solid #aaa;
+}
+
+.post-item-wrapper:nth-child(n + 2) {
+  margin: 3rpx 0;
+}
+
+.post-item-wrapper:nth-last-child(1) {
+  margin-top: 3rpx;
+  margin-bottom: 0;
+  border-bottom: 0 solid #aaa;
+}
+
+.main-area-scroll {
+  width: 100vw;
+  height: 100vh;
+}
+
+.item-placeholder {
+  width: 100%;
+  padding: 20rpx 0;
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: center;
+}
